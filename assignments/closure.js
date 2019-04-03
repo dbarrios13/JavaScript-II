@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function familyTree (){
+  const father = 'John';
+  function child(){
+    const father2 = 'Jack';
+    console.log(`${father} is my father`);
+    function grandchild(){
+      console.log(`${father2} is my father`);
+      console.log(`${father} is my grandfather`);
+    } // grandchild
+    grandchild();
+  }// child
+  child();
+}// family tree
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
